@@ -28,6 +28,7 @@ export default function UploadSingle() {
   };
 
   const handleUpload = () => {
+    // ref(storage, namaFoler/namaFolder/namaFolder/namaFile)
     const storageRef = ref(storage, `images/${image.name}`);
 
     const uploadTask = uploadBytesResumable(storageRef, image);
